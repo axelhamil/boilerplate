@@ -1,0 +1,14 @@
+{
+  "extends": "@packages/typescript-config/node.json",
+  "compilerOptions": {
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@shared/*": ["./src/shared/*"],
+      "@modules/*": ["./src/modules/*"]
+    }
+  },
+  "include": ["src/**/*", "../../packages/libs/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
